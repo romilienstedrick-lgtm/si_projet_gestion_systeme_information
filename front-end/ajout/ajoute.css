@@ -1,0 +1,350 @@
+.container-ajoute {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ajout-apprenant {
+    width: 60%;
+}
+
+.form-group{
+    padding: 0.2rem;
+}
+
+.form-group label{
+    font-size: 1.5rem;
+    color: black;
+    font-family: var(--font-family-poppins-light);
+}
+
+.form-group input{
+    width: 70%;
+    padding: 0.7rem;
+    border: 1px none var(--text-placeholder);
+    border-radius: var(--border-radius);
+    font-size: 1.5rem;
+    height: 4rem;
+    color: var(--dark-grey);
+    background-color: var(--simple-grey);
+}
+
+#nom{
+    margin-left: 5.3rem;
+}
+
+#prenom{
+    margin-left: 3rem;
+}
+
+#email{
+    margin-left: 4.7rem;
+}
+
+#sexe{
+    margin-left: 5.5rem;
+    width: 70%;
+    height: 4rem;
+    font-family: var(--font-family-poppins-light);
+    cursor: pointer;
+}
+#telephone{
+    margin-left: 1rem;
+}
+
+#adresse{
+    margin-left: 3rem;
+}
+
+/* Section pour le choix du cours */
+.form-group-choix-cours{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: -2.5rem;
+}
+.form-group-choix-cours h2{
+    margin-top: 1rem;
+    margin-left: -1rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-family-poppins-light);
+}
+.cours-disponibles{
+    background-color: var(--primary-blue);
+    width: 90%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1.5rem;
+    box-shadow: var(--secondary-shadow);
+}
+
+.cours-option{
+    background-color: var(--pure-white);
+    border-radius: 1rem;
+    padding: 0.7rem;
+    color: var(--text-primary);
+    width: 30%;
+    text-align: center;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cours-option label{
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-family: var(--font-family-poppins-light);
+}
+
+/* Section pour le choix de la session */
+.form-group-session{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    font-family: var(--font-family-poppins-light);
+    font-weight: bold;
+}
+
+#session{
+    margin-left: 4rem;
+    width: 70%;
+    height: 4rem;
+    font-family: var(--font-family-poppins-light);
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+/* Bouton d'envoi du formulaire */
+.prix-cours{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#prix-total{
+    font-size: 2.5rem;
+    color: var(--danger-red);
+    font-family: var(--font-family-poppins-boldlight);
+}
+
+.envoyer-formulaire{
+    background-color: black;
+    color: var(--pure-white);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.7rem;
+    font-size: 2rem;
+    width: 88%;
+    height: 5rem;
+    align-self: center;
+    cursor: pointer;
+    box-shadow: var(--main-shadow);
+}
+
+.envoyer-formulaire:hover{
+    background-color: var(--danger-red);
+    transition: var(--transition-fast);
+}
+
+.envoyer-formulaire:active{
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgb(0, 0, 0, 0.2);
+}
+
+/* Liste des étudiants ajoutés */
+.liste-apprenants{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    height: 58rem;
+}
+
+.liste-apprenants h2{
+    font-weight: bold;
+    background-color: var(--primary-blue);
+    width: 100%;
+    border: none;
+    display: flex;
+    font-family: var(--font-family-poppins-light);
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--pure-white);
+    box-shadow: var(--secondary-shadow);
+}
+
+.liste-apprenants ul{
+    list-style-type: none;
+    padding: 1rem;
+    width: 100%;
+    height: 54rem;
+    overflow-y: auto;
+    background-color: var(--simple-grey);
+    border-radius: 0.8rem;
+    box-shadow: var(--secondary-shadow);
+}
+
+.liste-apprenants li{
+    padding: 0.5rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.7rem;
+    color: black;
+    font-family: var(--font-family-poppins-light);
+    border-bottom: 2px solid var(--text-placeholder);
+    border-radius: 0.5rem;
+    background-color: var(--pure-white);
+    box-shadow: var(--main-shadow);
+}
+
+/* Parties pour les boutons dans les éléments de la liste */
+.actions{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    border-radius: var(--border-radius);
+    justify-content: space-between;
+    background-color: var(--simple-grey);
+}
+
+.btn-info{
+    background-color: var(--primary-blue);
+    color: var(--pure-white);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 8rem;
+    height: 4rem;
+}
+
+.btn-info:active{
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn-delete {
+    background-color: var(--danger-red);
+    color: var(--pure-white);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 4rem;
+}
+
+.btn-delete:active{
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 420px;
+    border-radius: 10px;
+}
+
+/* Bouton dans le modal*/
+#btn-edit, #btn-save, #btn-close {
+    background-color: var(--primary-blue);
+    color: var(--pure-white);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 8rem;
+    height: 4rem;
+    font-family: var(--font-family-poppins-light);
+    font-size: 1.5rem;
+    box-shadow: var(--main-shadow);
+}
+
+
+
+#btn-save{
+    background-color: var(--primary-blue);
+    color: var(--pure-white);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 10rem;
+    height: 4rem;
+    font-family: var(--font-family-poppins-light);
+    font-size: 1.5rem;
+    box-shadow: var(--main-shadow);
+}
+#btn-edit:active, #btn-save:active, #btn-close:active{
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* INPUT Dans le modal*/
+#edit-nom, #edit-prenom, #edit-email, #edit-telephone, #edit-adresse{
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px none var(--text-placeholder);
+    border-radius: var(--border-radius);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    height: 4rem;
+    color: var(--dark-grey);
+    background-color: var(--simple-grey);
+    cursor: pointer;
+    transition: var(--transition-fast)
+}
+
+#edit-nom:hover, #edit-prenom:hover, #edit-email:hover, #edit-telephone:hover, #edit-adresse:hover{
+    transform: scale(1.1);
+}
+
+/* #edit-nom:active, #edit-prenom:active, #edit-email:active, #edit-telephone:active, #edit-adresse:active{
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+} */
+
+#nom{
+    text-transform: uppercase;
+}

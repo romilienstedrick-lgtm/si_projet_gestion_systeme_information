@@ -1,0 +1,95 @@
+/* variables.css */
+
+/* Définition des polices personnalisées */
+@font-face {
+    font-family: 'Poppins_normal'; /* Fonts pour la poppins normal */
+    src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins_light'; /* Fonts pour la poppins normal */
+    src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins_bold'; /* Fonts pour la poppins bold */
+    src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto_normal'; /* Fonts pour le Roboto normal */
+    src: url('../fonts/Roboto/static/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto_bold'; /* Fonts pour le Roboto bold */
+    src: url('../fonts/Roboto/static/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    /* Couleurs principales */
+    --primary-blue: #3493f3;
+    --danger-red: #E74C3C;
+    --pure-white: #FFFFFF;
+    --light-grey: #F8F9FA;
+    --dark-grey: #343A40;
+    --simple-grey: #dfdfdf;
+
+    /* couleur dans le certificat */
+    --cyan:    #29abe2;
+    --cyan-dk: #1a8fc4;
+    --cyan-lt: #e8f6fd;
+    --gold:    #f0a500;
+    --gold-lt: #fff3d6;
+    --red:     #e74c3c;
+    --navy:    #1a3a5c;
+    --navy-lt: #2d5986;
+    --bg:      #f4f6f9;
+    --surface: #ffffff;
+    --surface2:#f0f4f8;
+    --text:    #1e2d3d;
+    --text-dim:#7a8fa6;
+    --border:  #dde3ec;
+    --cert-bg: #fdfcf9;
+    --shadow:  0 4px 20px rgba(41,171,226,0.12);
+    --shadow-lg: 0 12px 48px rgba(26,58,92,0.16); 
+
+    /* Dimensions et espacement */
+    --spacing-xs: 0.5rem;
+    --spacing-s: 1rem;
+    --spacing-m: 1.5rem;
+    --spacing-l: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Typographie */
+    --font-family-poppins: 'Poppins_normal', sans-serif;
+    --font-family-poppins-light: 'Poppins_light', sans-serif;
+    --font-family-poppins-bold: 'Poppins_bold', sans-serif;
+    --font-family-roboto: 'Roboto_normal', sans-serif;
+    --font-family-roboto-bold: 'Roboto_bold', sans-serif;
+
+    /* Couleurs de texte */
+    --text-primary: #333333;   
+    --text-secondary: #666666;
+    --text-placeholder: #999999;
+    
+    /* Bordures et éléments d'interface */
+    --border-radius: 4rem;
+
+    /* Design system */
+    --main-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    --secondary-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+    --transition-fast: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in;
+}
+

@@ -1,0 +1,159 @@
+.container-graphique {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    box-shadow: var(--main-shadow);
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+}
+
+.partie-info-nombre-apprenants {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 2rem;
+    width: 98%;
+    border-radius: 0.8rem;
+    background-color: var(--simple-grey);
+}
+
+.partie-info-nombre-apprenants a{
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+.active-card {
+    color: var(--primary-blue) !important;
+    box-shadow: 2px 5px 5px var(--primary-blue);
+    border-radius: 0.8rem;
+    transition: var(--transition-fast);
+}
+
+.info-nbr-total-apprenants, .info-nbr-apprenants-masculin, .info-nbr-apprenants-feminin {
+    height: auto;
+    background-color: #fff;
+    border-radius: 0.8rem;
+    padding: 2.5rem;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: var(--secondary-shadow);
+    transition: var(--transition-fast);
+}
+
+.info-nbr-total-apprenants:hover, .info-nbr-apprenants-masculin:hover, .info-nbr-apprenants-feminin:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: var(--transition-fast);
+
+}
+
+
+.info-nbr-total-apprenants h3, .info-nbr-apprenants-masculin h3, .info-nbr-apprenants-feminin h3 {
+    font-family: var(--font-family-poppins-bold);
+}
+
+.info-nbr-total-apprenants p, .info-nbr-apprenants-masculin p, .info-nbr-apprenants-feminin p {
+    font-family: var(--font-family-poppins-light);
+    font-size: 2.5rem;
+}
+
+.nbr-totaux{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.lucide-users-round, .lucide-mars, .lucide-venus{
+    width: 3rem;
+    height: 3rem;
+    color: var(--primary-blue);
+}
+
+
+.partie-affichage-nombre{
+    width: 98%;
+    height: 30rem;
+    background-color: var(--primary-blue);
+    border-radius: 0.8rem;
+    margin-top: 1rem;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.liste-nombre-apprenants {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}
+.liste-nombre-apprenants li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    background-color: var(--pure-white);
+    transition: var(--transition-fast);
+}
+
+.liste-nombre-apprenants li:nth-child(odd) {
+    background-color: var(--simple-grey);
+}
+
+.liste-nombre-apprenants li:hover {
+    transform: scale(1.01);
+    transition: var(--transition-fast);
+}
+
+/* Signe pour differencier les hommes et les femmes */
+.badge-sexe{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-poppins-light);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: white;
+
+}
+
+.badge-sexe.homme{
+    background: #2563eb;
+}
+
+.badge-sexe.femme{
+    background: #ec4899;
+}
+
+.my-chart-container {
+    width: 98%;
+    height: auto;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-chart-container-2 {
+    width: 98%;
+    height: auto;
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--simple-grey);
+}

@@ -1,0 +1,120 @@
+/* 1. Reset moderne */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Base du document */
+html {
+    font-size: 10px;           /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+/* 3. Styles globaux */
+body {
+    font-family: var(--font-family-roboto);
+    font-size: 1.6rem;          /* = 16px */
+    line-height: 1.7;
+    color: #1f2937;
+    background-color: var(--light-grey);
+}
+
+/* Style de la navigation general*/
+.top-header{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+
+/* Style de notre logos*/
+.photo img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: var(--primary-blue);
+    box-shadow: var(--secondary-shadow);
+}
+
+/* Style de notre bar de navigation-bar*/
+.navigation-bar ul{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3rem;
+}
+
+.navigation-bar ul li{
+    list-style: none;
+    padding: 1rem 1.2rem;
+}
+
+.navigation-bar ul li a.nav-link{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1.2rem 1.3rem;
+    border: none;
+    background-color: var(--pure-white);
+    font-size: 1.8rem;
+    border-radius: 3rem;
+    color: var(--simple-grey);
+    box-shadow: var(--secondary-shadow);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.navigation-bar ul li a.nav-link:hover{
+    background-color: var(--pure-white);
+    transition: var(--transition-fast);
+    color: var(--primary-blue);
+}
+
+.navigation-bar ul li a.nav-link:active{
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgb(0, 0, 0, 0.2);
+}
+
+.navigation-bar ul li a.nav-link.active{
+    background-color: var(--primary-blue);
+    color: var(--pure-white);
+    box-shadow: var(--main-shadow);
+}
+
+.navigation-bar ul li .lucide-user-round-pen, .navigation-bar ul li .lucide-chart-no-axes-combined{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.navigation-bar ul li .lucide-graduation-cap{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+/* Style des sections*/
+
+#section-ajout, #section-graphique, #section-certificat{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section{
+    display: none;
+}
+
+.section.active {
+  display: block;
+}
